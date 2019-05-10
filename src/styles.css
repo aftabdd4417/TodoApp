@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  background: #b8d4c8;
+}
+body {
+  margin: 0;
+  padding: 0px 0px 30px 0px;
+}
+h1 {
+  margin: 0;
+  padding: 20px 20px;
+  background: #316d49;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  background: #009688;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 7px;
+  color: white;
+}
+input[type="checkbox"] {
+  width: 30px;
+  height: 15px;
+  cursor: pointer;
+}
+.addnewitem button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #316d49;
+  color: white;
+  width: 22%;
+}
+.addnewitem input,
+.addnewitem button {
+  border: 1px;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.addnewitem input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 75%;
+}
+.subheader > span {
+  color: #386f2e;
+}
+.subheader {
+  font-size: 30px;
+  line-height: 1.5;
+}
+.maincontent {
+  margin: 4%;
+}
+.addnewitem {
+  position: relative;
+}
+p#alertmsg {
+  position: absolute;
+  top: -50px;
+  left: 1%;
+  color: red;
+  font-size: 20px;
+}
