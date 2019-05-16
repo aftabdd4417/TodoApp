@@ -1,0 +1,11 @@
+<div class="addnewitem">
+  <input
+    type="text"
+    [(ngModel)]="newtaskvalue"
+    placeholder="Add More Items.."
+  />
+  <button (click)="onClick()">Add</button>
+  <p id="alertmsg" *ngIf="alertmsg">Type Something</p>
+  <br /><br />
+  <button class="goback" (click)="goBack()">go back</button>
+</div>

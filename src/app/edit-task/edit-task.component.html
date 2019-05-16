@@ -1,0 +1,12 @@
+<div class="addnewitem edittask" *ngIf="selectedTask">
+  <input
+    type="text"
+    value="{{ selectedTask.value }}"
+    [(ngModel)]="selectedTask.value"
+  />
+  <button class="editsave notfloat" routerLink="/edit-task">
+    Save
+  </button>
+  <br /><br />
+  <button class="goback" (click)="goBack()">go back</button>
+</div>

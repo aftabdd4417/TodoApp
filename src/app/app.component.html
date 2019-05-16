@@ -1,27 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <h1>
-    {{ title }}
-  </h1>
-  <div class="maincontent">
-    <div class="addnewitem">
-      <input type="text" [(ngModel)]="task" placeholder="Add More Items.." />
-      <button (click)="onClick()">Add</button>
-      <p id="alertmsg" *ngIf="alertmsg">Type Something</p>
-    </div>
-
-    <br />
-    <div class="subheader">
-      Favourite Fruite is: <span>{{ favouriteFruite }}</span>
-      <br />
-      <strong>All Fruits:</strong>
-    </div>
-    <ul>
-      <li *ngFor="let list of todoArray">
-        <input type="checkbox" value="{{ list }}" /> <span>{{ list }}</span>
-      </li>
-    </ul>
-    <u *ngIf="todoArray.length < 1">No Fruit </u>
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<div class="navbar">
+  <div>
+    <h1>
+      {{ title }}
+    </h1>
+  </div>
+  <div class="routmenu">
+    <a routerLinkActive="active" routerLink="view-task">View Task</a>
+    <a routerLinkActive="active" routerLink="add-task">Add Task</a>
   </div>
 </div>
 <router-outlet></router-outlet>
